@@ -6,10 +6,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Customer {
+public class Customers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long customer_id;
     private String Name;
     private String Address;
     private String Phone;
@@ -17,10 +17,10 @@ public class Customer {
     private String Company;
 
     public Long getId() {
-        return id;
+        return customer_id;
     }
     public void setId(int id) {
-        this.id = id;
+        this.customer_id = id;
     }
     public String getName() {
         return Name;
@@ -54,7 +54,7 @@ public class Customer {
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.customer_id = id;
     }
 
 

@@ -1,8 +1,7 @@
 package org.voicetheinvoice.vti.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.voicetheinvoice.vti.model.Customer;
-import org.voicetheinvoice.vti.model.Invoice;
+import org.voicetheinvoice.vti.model.Customers;
 
-public interface CustomerRepository extends JpaRepository<Customer, Integer> {
+public interface CustomerRepository extends JpaRepository<Customers, Integer> {
 }
