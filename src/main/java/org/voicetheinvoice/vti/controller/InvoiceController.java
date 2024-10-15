@@ -2,7 +2,7 @@ package org.voicetheinvoice.vti.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.voicetheinvoice.vti.model.Invoice;
+import org.voicetheinvoice.vti.model.Invoices;
 import org.voicetheinvoice.vti.service.InvoiceService;
 
 import java.util.List;
@@ -14,12 +14,12 @@ public class InvoiceController {
     private InvoiceService invoiceService;
 
     @GetMapping
-    public List<Invoice> getAllInvoices() {
+    public List<Invoices> getAllInvoices() {
         return invoiceService.getAllInvoices();
     }
 
     @PostMapping
-    public Invoice createInvoice(@RequestBody Invoice invoice) {
-        return invoiceService.createInvoice(invoice);
+    public Invoices createInvoice(@RequestBody Invoices invoices) {
+        return invoiceService.createInvoice(invoices);
     }
 }

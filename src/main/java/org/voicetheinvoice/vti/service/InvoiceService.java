@@ -3,7 +3,7 @@ package org.voicetheinvoice.vti.service;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.voicetheinvoice.vti.model.Invoice;
+import org.voicetheinvoice.vti.model.Invoices;
 import org.voicetheinvoice.vti.repository.InvoiceRepository;
 
 import java.util.List;
@@ -13,12 +13,12 @@ public class InvoiceService {
     @Autowired
     private InvoiceRepository invoiceRepository;
 
-    public List<Invoice> getAllInvoices() {
+    public List<Invoices> getAllInvoices() {
         return invoiceRepository.findAll();
     }
 
-    public Invoice createInvoice(Invoice invoice) {
-        return invoiceRepository.save(invoice);
+    public Invoices createInvoice(Invoices invoices) {
+        return invoiceRepository.save(invoices);
     }
 
 }
