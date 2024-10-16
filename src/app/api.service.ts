@@ -13,11 +13,11 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getCustomers(): Observable<Customers[]> {
-    return this.http.get<Customers[]>('/api/customers');
+    return this.http.get<Customers[]>(this.apiUrl);
   }
 
   addCustomer(customer: Customers): Observable<Customers> {
-    return this.http.post<Customers>('/api/customers', customer);
+    return this.http.post<Customers>(this.apiUrl, customer);
   }
 }
 
