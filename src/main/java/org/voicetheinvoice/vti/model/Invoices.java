@@ -23,8 +23,8 @@ public class Invoices {
         return invoice_id;
     }
 
-    public void setId(Long id) {
-        this.invoice_id = id;
+    public void setId(Long invoice_id) {
+        this.invoice_id = invoice_id;
     }
 
     public long getCustomer_id() {

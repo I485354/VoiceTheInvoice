@@ -19,8 +19,8 @@ public class Customers {
     public Long getId() {
         return customer_id;
     }
-    public void setId(int id) {
-        this.customer_id = id;
+    public void setId(int customer_id) {
+        this.customer_id = customer_id;
     }
     public String getName() {
         return Name;
